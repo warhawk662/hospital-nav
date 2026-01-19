@@ -1,24 +1,142 @@
 {
   "nodes": [
-    { "id": "reception", "x": 100, "y": 100, "name": "Reception Desk", "type": "poi", "floor": 1 },
-    { "id": "junc_1", "x": 300, "y": 100, "name": "Hallway A", "type": "junction", "floor": 1 },
-    { "id": "elevator_f1", "x": 300, "y": 300, "name": "Elevator (Ground)", "type": "connector", "floor": 1 },
-    { "id": "stairs_f1", "x": 100, "y": 300, "name": "Stairs (Ground)", "type": "connector", "floor": 1 },
+    
+    { "id": "f1_reception",   "x": 420, "y": 120, "name": "Reception Desk", "floor": 1, "type": "poi" },
+    { "id": "f1_lobby",       "x": 500, "y": 200, "name": "Main Lobby", "floor": 1, "type": "poi" },
+    
+    { "id": "f1_emergency",   "x": 150, "y": 500, "name": "Emergency Dept", "floor": 1, "type": "poi" },
+    
+    { "id": "f1_pharmacy",    "x": 500, "y": 850, "name": "Pharmacy", "floor": 1, "type": "poi" },
+    
+    { "id": "f1_cafeteria",   "x": 800, "y": 850, "name": "Cafeteria", "floor": 1, "type": "poi" },
+    
+    { "id": "f1_restrooms",   "x": 850, "y": 580, "name": "Restrooms", "floor": 1, "type": "poi" },
+    
+    { "id": "f1_clinic",      "x": 800, "y": 200, "name": "Outpatient Clinic", "floor": 1, "type": "poi" },
 
-    { "id": "elevator_f2", "x": 300, "y": 300, "name": "Elevator (2nd Floor)", "type": "connector", "floor": 2 },
-    { "id": "stairs_f2", "x": 100, "y": 300, "name": "Stairs (2nd Floor)", "type": "connector", "floor": 2 },
-    { "id": "cardio", "x": 600, "y": 400, "name": "Cardiology Dept", "type": "poi", "floor": 2 },
-    { "id": "labs", "x": 600, "y": 100, "name": "Pathology Labs", "type": "poi", "floor": 2 }
+    { "id": "door_emergency", "x": 320, "y": 380, "name": "Door", "floor": 1, "type": "junction" },
+    
+    { "id": "door_pharmacy",  "x": 550, "y": 680, "name": "Door", "floor": 1, "type": "junction" },
+    
+    { "id": "door_cafeteria", "x": 750, "y": 680, "name": "Door", "floor": 1, "type": "junction" },
+    
+    { "id": "door_restrooms", "x": 680, "y": 580, "name": "Door", "floor": 1, "type": "junction" },
+    
+    { "id": "door_clinic",    "x": 650, "y": 320, "name": "Door", "floor": 1, "type": "junction" },
+
+    { "id": "f1_stairs",      "x": 420, "y": 500, "name": "Main Stairs", "floor": 1, "type": "connector" },
+    { "id": "f1_elevator",    "x": 580, "y": 500, "name": "Elevator", "floor": 1, "type": "connector" },
+
+    { "id": "f1_junc_BL", "x": 320, "y": 320, "name": "Corner", "floor": 1, "type": "junction" },
+    { "id": "f1_junc_BR", "x": 680, "y": 320, "name": "Corner", "floor": 1, "type": "junction" },
+    { "id": "f1_junc_TL", "x": 320, "y": 680, "name": "Corner", "floor": 1, "type": "junction" },
+    { "id": "f1_junc_TR", "x": 680, "y": 680, "name": "Corner", "floor": 1, "type": "junction" },
+    
+    { "id": "f1_mid_bottom", "x": 500, "y": 320, "name": "Hallway", "floor": 1, "type": "junction" },
+    { "id": "f1_mid_top",    "x": 500, "y": 680, "name": "Hallway", "floor": 1, "type": "junction" },
+    { "id": "f1_mid_left",   "x": 320, "y": 500, "name": "Hallway", "floor": 1, "type": "junction" },
+    { "id": "f1_mid_right",  "x": 680, "y": 500, "name": "Hallway", "floor": 1, "type": "junction" },
+
+
+
+    { "id": "f2_nurse_stn",   "x": 250, "y": 500, "name": "Nurse Station", "floor": 2, "type": "poi" },
+    
+    { "id": "f2_ward_A",      "x": 100, "y": 800, "name": "Inpatient Ward A", "floor": 2, "type": "poi" },
+    { "id": "f2_ward_B",      "x": 100, "y": 200, "name": "Inpatient Ward B", "floor": 2, "type": "poi" },
+    
+    { "id": "f2_op_theater",  "x": 500, "y": 850, "name": "Operating Theater", "floor": 2, "type": "poi" },
+    
+    { "id": "f2_sterile",     "x": 750, "y": 850, "name": "Sterile Zone", "floor": 2, "type": "poi" },
+    
+    { "id": "f2_icu",         "x": 850, "y": 500, "name": "ICU", "floor": 2, "type": "poi" },
+    
+    { "id": "f2_staff",       "x": 500, "y": 200, "name": "Staff Break Room", "floor": 2, "type": "poi" },
+
+    { "id": "door_op_theater", "x": 500, "y": 680, "name": "Door", "floor": 2, "type": "junction" },
+    { "id": "door_sterile",    "x": 680, "y": 750, "name": "Door", "floor": 2, "type": "junction" },
+    { "id": "door_icu",        "x": 680, "y": 500, "name": "Door", "floor": 2, "type": "junction" },
+    { "id": "door_ward_A",     "x": 320, "y": 750, "name": "Door", "floor": 2, "type": "junction" },
+    { "id": "door_ward_B",     "x": 320, "y": 250, "name": "Door", "floor": 2, "type": "junction" },
+    { "id": "door_staff",      "x": 500, "y": 320, "name": "Door", "floor": 2, "type": "junction" },
+
+    { "id": "f2_stairs",      "x": 420, "y": 500, "name": "Main Stairs", "floor": 2, "type": "connector" },
+    { "id": "f2_elevator",    "x": 580, "y": 500, "name": "Elevator", "floor": 2, "type": "connector" },
+
+    { "id": "f2_junc_BL", "x": 320, "y": 320, "name": "Corner", "floor": 2, "type": "junction" },
+    { "id": "f2_junc_BR", "x": 680, "y": 320, "name": "Corner", "floor": 2, "type": "junction" },
+    { "id": "f2_junc_TL", "x": 320, "y": 680, "name": "Corner", "floor": 2, "type": "junction" },
+    { "id": "f2_junc_TR", "x": 680, "y": 680, "name": "Corner", "floor": 2, "type": "junction" },
+    { "id": "f2_mid_bottom", "x": 500, "y": 320, "name": "Hallway", "floor": 2, "type": "junction" },
+    { "id": "f2_mid_top",    "x": 500, "y": 680, "name": "Hallway", "floor": 2, "type": "junction" },
+    { "id": "f2_mid_left",   "x": 320, "y": 500, "name": "Hallway", "floor": 2, "type": "junction" },
+    { "id": "f2_mid_right",  "x": 680, "y": 500, "name": "Hallway", "floor": 2, "type": "junction" }
   ],
+
   "edges": [
-    { "start": "reception", "end": "junc_1", "type": "corridor" },
-    { "start": "junc_1", "end": "elevator_f1", "type": "corridor" },
-    { "start": "reception", "end": "stairs_f1", "type": "corridor" },
     
-    { "start": "elevator_f1", "end": "elevator_f2", "type": "elevator" },
-    { "start": "stairs_f1", "end": "stairs_f2", "type": "stairs" },
+    { "start": "f1_junc_BL", "end": "f1_mid_bottom", "type": "corridor" },
+    { "start": "f1_mid_bottom", "end": "f1_junc_BR", "type": "corridor" },
+    { "start": "f1_junc_BR", "end": "f1_mid_right", "type": "corridor" },
+    { "start": "f1_mid_right", "end": "f1_junc_TR", "type": "corridor" },
+    { "start": "f1_junc_TR", "end": "f1_mid_top", "type": "corridor" },
+    { "start": "f1_mid_top", "end": "f1_junc_TL", "type": "corridor" },
+    { "start": "f1_junc_TL", "end": "f1_mid_left", "type": "corridor" },
+    { "start": "f1_mid_left", "end": "f1_junc_BL", "type": "corridor" },
+
+    { "start": "f1_mid_left", "end": "door_emergency", "type": "corridor" },
+    { "start": "door_emergency", "end": "f1_emergency", "type": "corridor" },
+
+    { "start": "f1_mid_top", "end": "door_pharmacy", "type": "corridor" },
+    { "start": "door_pharmacy", "end": "f1_pharmacy", "type": "corridor" },
+
+    { "start": "f1_junc_TR", "end": "door_cafeteria", "type": "corridor" },
+    { "start": "door_cafeteria", "end": "f1_cafeteria", "type": "corridor" },
+
+    { "start": "f1_mid_right", "end": "door_restrooms", "type": "corridor" },
+    { "start": "door_restrooms", "end": "f1_restrooms", "type": "corridor" },
+
+    { "start": "f1_junc_BR", "end": "door_clinic", "type": "corridor" },
+    { "start": "door_clinic", "end": "f1_clinic", "type": "corridor" },
+
+    { "start": "f1_mid_bottom", "end": "f1_lobby", "type": "corridor" },
+    { "start": "f1_lobby", "end": "f1_reception", "type": "corridor" },
+
+    { "start": "f1_mid_left", "end": "f1_stairs", "type": "corridor" },
+    { "start": "f1_mid_right", "end": "f1_elevator", "type": "corridor" },
+
+
     
-    { "start": "elevator_f2", "end": "cardio", "type": "corridor" },
-    { "start": "stairs_f2", "end": "labs", "type": "corridor" }
+    { "start": "f2_junc_BL", "end": "f2_mid_bottom", "type": "corridor" },
+    { "start": "f2_mid_bottom", "end": "f2_junc_BR", "type": "corridor" },
+    { "start": "f2_junc_BR", "end": "f2_mid_right", "type": "corridor" },
+    { "start": "f2_mid_right", "end": "f2_junc_TR", "type": "corridor" },
+    { "start": "f2_junc_TR", "end": "f2_mid_top", "type": "corridor" },
+    { "start": "f2_mid_top", "end": "f2_junc_TL", "type": "corridor" },
+    { "start": "f2_junc_TL", "end": "f2_mid_left", "type": "corridor" },
+    { "start": "f2_mid_left", "end": "f2_junc_BL", "type": "corridor" },
+
+    { "start": "f2_mid_top", "end": "door_op_theater", "type": "corridor" },
+    { "start": "door_op_theater", "end": "f2_op_theater", "type": "corridor" },
+
+    { "start": "f2_junc_TR", "end": "door_sterile", "type": "corridor" },
+    { "start": "door_sterile", "end": "f2_sterile", "type": "corridor" },
+
+    { "start": "f2_mid_right", "end": "door_icu", "type": "corridor" },
+    { "start": "door_icu", "end": "f2_icu", "type": "corridor" },
+
+    { "start": "f2_mid_left", "end": "f2_nurse_stn", "type": "corridor" },
+    { "start": "f2_nurse_stn", "end": "door_ward_A", "type": "corridor" },
+    { "start": "f2_nurse_stn", "end": "door_ward_B", "type": "corridor" },
+    { "start": "door_ward_A", "end": "f2_ward_A", "type": "corridor" },
+    { "start": "door_ward_B", "end": "f2_ward_B", "type": "corridor" },
+
+    { "start": "f2_mid_bottom", "end": "door_staff", "type": "corridor" },
+    { "start": "door_staff", "end": "f2_staff", "type": "corridor" },
+
+    { "start": "f2_mid_left", "end": "f2_stairs", "type": "corridor" },
+    { "start": "f2_mid_right", "end": "f2_elevator", "type": "corridor" },
+
+    { "start": "f1_elevator", "end": "f2_elevator", "type": "elevator" },
+    { "start": "f1_stairs",   "end": "f2_stairs",   "type": "stairs" }
   ]
 }

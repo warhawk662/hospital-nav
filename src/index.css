@@ -1,68 +1,57 @@
-/* src/index.css */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  overflow: hidden; /* Prevent scrolling on mobile */
+/* Add this to the bottom of src/index.css */
+
+@keyframes dash-animation {
+  to {
+    stroke-dashoffset: -20;
+  }
 }
 
-/* Floating Search Bar Container */
-.search-container {
+.walking-path {
+  stroke-dasharray: 10, 10; /* Create dashes */
+  animation: dash-animation 1s linear infinite; /* Move them */
+}
+
+/* Navigation Instructions Panel */
+.nav-panel {
   position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 400px;
-  z-index: 1000; /* Sit above the map */
+  bottom: 20px;
+  left: 20px;
+  width: 300px;
   background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 2000;
+  overflow: hidden;
+  font-family: sans-serif;
 }
 
-/* The Input Field */
-.search-input {
-  width: 100%;
+.nav-header {
+  background: #007bff;
+  color: white;
   padding: 15px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  box-sizing: border-box; /* Keeps padding inside width */
-  outline: none;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Dropdown Results */
-.search-results {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: white;
-  border-top: 1px solid #eee;
-  border-radius: 0 0 8px 8px;
+.nav-steps {
   max-height: 200px;
   overflow-y: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.search-item {
-  padding: 15px;
-  border-bottom: 1px solid #f0f0f0;
-  cursor: pointer;
-}
-
-.search-item:hover {
-  background-color: #f9f9f9;
-}
-
-/* Mobile-friendly Popup Buttons */
-.leaflet-popup-content button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
+.nav-step {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 14px;
-  margin-top: 8px;
+}
+
+.nav-step:last-child {
+  border-bottom: none;
 }
