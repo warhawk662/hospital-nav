@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "leaflet": "^1.9.4",
     "ngraph.graph": "^20.0.1",
     "ngraph.path": "^1.4.0",
