@@ -1,13 +1,24 @@
 {
   "nodes": [
-    { "id": "reception", "x": 100, "y": 100, "name": "Reception Desk", "type": "poi" },
-    { "id": "junc_1", "x": 300, "y": 100, "name": "Hallway A", "type": "junction" },
-    { "id": "pharmacy", "x": 300, "y": 400, "name": "Pharmacy", "type": "poi" },
-    { "id": "cardio", "x": 600, "y": 400, "name": "Cardiology", "type": "poi" }
+    { "id": "reception", "x": 100, "y": 100, "name": "Reception Desk", "type": "poi", "floor": 1 },
+    { "id": "junc_1", "x": 300, "y": 100, "name": "Hallway A", "type": "junction", "floor": 1 },
+    { "id": "elevator_f1", "x": 300, "y": 300, "name": "Elevator (Ground)", "type": "connector", "floor": 1 },
+    { "id": "stairs_f1", "x": 100, "y": 300, "name": "Stairs (Ground)", "type": "connector", "floor": 1 },
+
+    { "id": "elevator_f2", "x": 300, "y": 300, "name": "Elevator (2nd Floor)", "type": "connector", "floor": 2 },
+    { "id": "stairs_f2", "x": 100, "y": 300, "name": "Stairs (2nd Floor)", "type": "connector", "floor": 2 },
+    { "id": "cardio", "x": 600, "y": 400, "name": "Cardiology Dept", "type": "poi", "floor": 2 },
+    { "id": "labs", "x": 600, "y": 100, "name": "Pathology Labs", "type": "poi", "floor": 2 }
   ],
   "edges": [
-    { "start": "reception", "end": "junc_1" },
-    { "start": "junc_1", "end": "pharmacy" },
-    { "start": "pharmacy", "end": "cardio" }
+    { "start": "reception", "end": "junc_1", "type": "corridor" },
+    { "start": "junc_1", "end": "elevator_f1", "type": "corridor" },
+    { "start": "reception", "end": "stairs_f1", "type": "corridor" },
+    
+    { "start": "elevator_f1", "end": "elevator_f2", "type": "elevator" },
+    { "start": "stairs_f1", "end": "stairs_f2", "type": "stairs" },
+    
+    { "start": "elevator_f2", "end": "cardio", "type": "corridor" },
+    { "start": "stairs_f2", "end": "labs", "type": "corridor" }
   ]
 }
