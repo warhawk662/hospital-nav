@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    { "id": "reception", "x": 100, "y": 100, "name": "Reception Desk", "type": "poi" },
+    { "id": "junc_1", "x": 300, "y": 100, "name": "Hallway A", "type": "junction" },
+    { "id": "pharmacy", "x": 300, "y": 400, "name": "Pharmacy", "type": "poi" },
+    { "id": "cardio", "x": 600, "y": 400, "name": "Cardiology", "type": "poi" }
+  ],
+  "edges": [
+    { "start": "reception", "end": "junc_1" },
+    { "start": "junc_1", "end": "pharmacy" },
+    { "start": "pharmacy", "end": "cardio" }
+  ]
+}

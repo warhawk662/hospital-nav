@@ -1,0 +1,68 @@
+/* src/index.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden; /* Prevent scrolling on mobile */
+}
+
+/* Floating Search Bar Container */
+.search-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000; /* Sit above the map */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* The Input Field */
+.search-input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Keeps padding inside width */
+  outline: none;
+}
+
+/* Dropdown Results */
+.search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: white;
+  border-top: 1px solid #eee;
+  border-radius: 0 0 8px 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-item {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.search-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Mobile-friendly Popup Buttons */
+.leaflet-popup-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 8px;
+}
